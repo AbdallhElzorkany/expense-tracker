@@ -1,0 +1,14 @@
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\bin\Debug\net8.0\ExpenseTracker.exe
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\bin\Debug\net8.0\ExpenseTracker.deps.json
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\bin\Debug\net8.0\ExpenseTracker.runtimeconfig.json
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\bin\Debug\net8.0\ExpenseTracker.dll
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\bin\Debug\net8.0\ExpenseTracker.pdb
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.AssemblyInfoInputs.cache
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.AssemblyInfo.cs
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.csproj.CoreCompileInputs.cache
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.dll
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\refint\ExpenseTracker.dll
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.pdb
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.genruntimeconfig.cache
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ref\ExpenseTracker.dll
