@@ -10,31 +10,8 @@ namespace ExpenseTracker
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public decimal Amount { get; set; }
-        public string Category { get; set; }
-        public string Description { get; set; }
-    }
-
-    public class ExpenseManager
-    {
-        private List<Expense> expenses = new List<Expense>();
-
-        public void AddExpense(Expense expense) => expenses.Add(expense);
-
-        public void EditExpense(int id, Expense updatedExpense)
-        {
-            var expense = expenses.Find(e => e.Id == id);
-            if (expense != null)
-            {
-                expense.Date = updatedExpense.Date;
-                expense.Amount = updatedExpense.Amount;
-                expense.Category = updatedExpense.Category;
-                expense.Description = updatedExpense.Description;
-            }
-        }
-
-        public void DeleteExpense(int id) => expenses.RemoveAll(e => e.Id == id);
-
-        public List<Expense> GetExpenses() => expenses;
+        public string? Category { get; set; }
+        public string? Description { get; set; }
     }
 
     public class FileManager
@@ -60,45 +37,58 @@ namespace ExpenseTracker
 
     class Program
     {
-        private static ExpenseManager expenseManager = new ExpenseManager();
+        private static ExpenseFeatures expenseManager = new ExpenseFeatures();
         private static FileManager fileManager = new FileManager();
 
         static void Main()
         {
             expenseManager.GetExpenses().AddRange(fileManager.LoadFromJson());
-            try { 
-            while (true)
+            try
             {
-                Console.Clear();
-                Console.WriteLine("Expense Tracker");
-                Console.WriteLine("1. Add Expense");
-                Console.WriteLine("2. View Expenses");
-                Console.WriteLine("3. Edit Expense");
-                Console.WriteLine("4. Delete Expense");
-                Console.WriteLine("5. Save and Exit");
-
-                string option = Console.ReadLine();
-
-                switch (option)
+                while (true)
                 {
-                    case "1": AddExpenseUI(); break;
-                    case "2": ViewExpensesUI(); break;
-                    case "3": EditExpenseUI(); break;
-                    case "4": DeleteExpenseUI(); break;
-                    case "5":
-                        fileManager.SaveToJson(expenseManager.GetExpenses());
-                        return;
-                    default:
-                        Console.WriteLine("Invalid option. Press Enter to try again.");
-                        Console.ReadLine();
-                        break;
+                    Console.Clear();
+                    Console.WriteLine("Expense Tracker");
+                    Console.WriteLine("1. Add Expense");
+                    Console.WriteLine("2. View Expenses");
+                    Console.WriteLine("3. Edit Expense");
+                    Console.WriteLine("4. Delete Expense");
+                    Console.WriteLine("5. Save and Exit");
+
+                    string? input = Console.ReadLine();
+
+                    // Try to parse the input to an integer
+                    if (int.TryParse(input, out int option))
+                    {
+                        switch (option)
+                        {
+                            case 1: AddExpenseUI(); break;
+                            case 2: ViewExpensesUI(); break;
+                            case 3: EditExpenseUI(); break;
+                            case 4: DeleteExpenseUI(); break;
+                            case 5:
+                                fileManager.SaveToJson(expenseManager.GetExpenses());
+                                return;
+                            default:
+                                Console.WriteLine("Invalid option. Please enter a number between 1 and 5.");
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Please enter a valid number.");
+                    }
+
+                    Console.ReadLine();
                 }
             }
-            }catch(Exception exeption)
+            catch (Exception exception)
             {
-                Console.WriteLine(exeption.Message);
+                Console.WriteLine(exception.Message);
             }
         }
+
+
 
         private static void AddExpenseUI()
         {

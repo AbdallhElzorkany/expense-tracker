@@ -12,3 +12,4 @@ C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\re
 C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.pdb
 C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.genruntimeconfig.cache
 C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ref\ExpenseTracker.dll
+C:\Users\eissa\Desktop\c#proj1\ExpenseTracker\ExpenseTracker\obj\Debug\net8.0\ExpenseTracker.sourcelink.json
