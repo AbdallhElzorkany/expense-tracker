@@ -40,16 +40,4 @@ public class ExpenseFeatures
     {
         return expenses;
     }
-
-    public void LoadExpenses(List<Expense> loadedExpenses)
-    {
-        for (int i = 0; i < loadedExpenses.Count; i++)
-        {
-            expenses.Add(loadedExpenses[i]);
-            if (loadedExpenses[i].Id > lastId)
-            {
-                lastId = loadedExpenses[i].Id;
-            }
-        }
-    }
 }
