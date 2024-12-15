@@ -3,11 +3,9 @@
 public class ExpenseFeatures
 {
     private List<Expense> expenses = new List<Expense>();
-    private int lastId = 0;
-
     public void AddExpense(Expense expense)
     {
-        expense.Id = ++lastId;
+        expense.Id = expenses[expenses.Count -1].Id + 1;
         expenses.Add(expense);
     }
 
@@ -40,4 +38,7 @@ public class ExpenseFeatures
     {
         return expenses;
     }
+
 }
+
+

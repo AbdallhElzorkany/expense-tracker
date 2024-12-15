@@ -12,5 +12,12 @@
     "Amount": 2,
     "Category": "asa",
     "Description": "sasadf"
+  },
+  {
+    "Id": 3,
+    "Date": "0323-02-02T00:00:00",
+    "Amount": 2,
+    "Category": "goods",
+    "Description": "amazon"
   }
 ]
