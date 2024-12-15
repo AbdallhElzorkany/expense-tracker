@@ -7,7 +7,7 @@ public class ExpenseFeatures
 
     public void AddExpense(Expense expense)
     {
-        expense.Id = ++lastId;
+        expense.Id = expenses[expenses.Count -1].Id + 1;
         expenses.Add(expense);
     }
 
