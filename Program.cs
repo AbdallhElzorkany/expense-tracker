@@ -123,6 +123,7 @@ namespace ExpenseTracker
 
                 expenseManager.EditExpense(id, new Expense
                 {
+                    Id = id,
                     Date = date,
                     Amount = amount,
                     Category = category,

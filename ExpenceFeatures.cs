@@ -5,11 +5,7 @@ public class ExpenseFeatures
     private List<Expense> expenses = new List<Expense>();
     public void AddExpense(Expense expense)
     {
-        //if the list is empty
-        if (expenses.Count == 0)
-            expense.Id = 1;
-        else
-        expense.Id = expenses[expenses.Count -1].Id + 1;
+   
         expenses.Add(expense);
     }
 
@@ -19,7 +15,6 @@ public class ExpenseFeatures
         {
             if (expenses[i].Id == id)
             {
-                updatedExpense.Id = id;
                 expenses[i] = updatedExpense;
                 break;
             }
